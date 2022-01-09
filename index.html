@@ -28,6 +28,20 @@
       .navbar a:hover {
         background-color: #000;
       }
+      
+      .navbar a:before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #444;
+        
+        position: absolute;
+        top: 0;
+        width: 0%;
+        
+        transition: all ease-in-out 250ms;
+         
+      }
 
       /* Current/active navbar link */
       .active {
@@ -47,9 +61,9 @@
   
   
   <body>
-    <header>
+    
     <div class="navbar">
-      <a class="" href="#" style="font-family:sans-serif"><i class="fa fa-fw fa-user"></i> Chi-Hung Chang</a>
+      <a href="#" style="font-family:sans-serif"><i class="fa fa-fw fa-user"></i> Chi-Hung Chang</a>
       <a href="#projects" style="font-family:sans-serif"><i class="fas fa-project-diagram"></i> Projects</a>
       <a href="#publications" style="font-family:sans-serif"><i class="fas fa-book"></i> Publications</a>
       <a href="#talks" style="font-family:sans-serif"><i class="far fa-comments"></i> Talks</a>
@@ -57,7 +71,7 @@
       <a href="#cv" style="font-family:sans-serif"><i class="fas fa-file"></i> CV</a>
       <a href="#contact" style="font-family:sans-serif"><i class="fa fa-fw fa-envelope"></i> Contact</a>
     </div>    
-    </header>
+    
 
     <div style="padding-left:350px; padding-right:300px; line-height:1.5">
       <br>
