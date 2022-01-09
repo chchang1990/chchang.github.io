@@ -29,18 +29,17 @@
         background-color: #000;
       }
       
-      .navbar a:hover::before {
+      .navbar a::before {
         content: '';
         display: block;
         height: 5px;
-        background-color: white;
+        background-color: #444;
         
         position: absolute;
-        top: 0;
-        width: 0%;
+        top: 5px;
+        width: 10%;
         
-        transition: all ease-in-out 250ms;
-         
+        transition: all ease-in-out 250ms;      
       }
 
       /* Current/active navbar link */
