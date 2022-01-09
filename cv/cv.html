@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chi-Hung Chang</title>
+    <link rel="stylesheet" href="https://chchang1990.github.io/academicon/css/academicons.min.css">
+    <link rel="stylesheet" href="https://chchang1990.github.io/fontawesome/css/all.css">   
+    
+    <style>
+      
+       /* Style the navigation bar */
+      .navbar {
+        width: 100%;
+        /*background-color: #555;*/
+        overflow: auto;
+      }
+
+      /* Navbar links */
+      .navbar a {
+        float: left;
+        text-align: center;
+        padding: 12px;
+        color: #6F4E37;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+      }
+
+      /* Navbar links on mouse-over */
+      .navbar a:hover {
+        color: #000;
+        font-weight: bold;
+      }
+
+      /* Transition effect */
+        /* Draw a line after the link when not hover */
+      .navbar a::after {
+        content: '';
+        display: block;
+        height: 2.5px;
+        background-color: #444;
+        
+        position: absolute;
+        bottom: 0;
+        width: 0%;                  
+      }      
+        /* Draw a line after the link when hover, and apply transition effect */
+      .navbar a:hover::after {
+        content: '';
+        display: block;
+        height: 2.5px;
+        background-color: #444;
+        
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+        /* transition: property duration timing-function delay|initial|inherit */
+        transition: all 0.2s ease-in-out;             
+      }
+
+      /* Current/active navbar link
+      .active {
+        color: #000;
+        font-weight: bold;
+      }    
+      */
+      
+      /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+        }
+      } 
+    </style>    
+    
+  </head>
+  
+  
+  <body style="background-color:#FBFBF9">
+    
+    <div class="navbar">
+      <a href="https://chchang1990.github.io/index.html" style="font-family:sans-serif"><i class="fa fa-fw fa-user"></i> Chi-Hung Chang</a>
+      <a href="https://chchang1990.github.io/projects/projects.html" style="font-family:sans-serif"><i class="fas fa-project-diagram"></i> Projects</a>
+      <a href="https://chchang1990.github.io/publications/publications.html" style="font-family:sans-serif"><i class="fas fa-book"></i> Publications</a>
+      <a href="https://chchang1990.github.io/talks/talks.html" style="font-family:sans-serif"><i class="far fa-comments"></i> Talks</a>
+      <a href="https://chchang1990.github.io/teaching/teaching.html" style="font-family:sans-serif"><i class="fas fa-chalkboard-teacher"></i> Teaching</a>      
+      <a href="#" style="font-family:sans-serif"><i class="fas fa-file"></i> CV</a>
+      <a href="https://chchang1990.github.io/contact/contact.html" style="font-family:sans-serif"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>    
+    
+
+    <div style="padding-left:350px; padding-right:300px; line-height:1.5">
+      <br>
+      <br>
+      <h1 style="font-family:sans-serif; color:#43302E">CV</h1>
+      <p style="font-family:sans-serif; color:#786D5F" align="justify">Under construction</p>
+   
+    </div>     
+    
+      
+  </body>
+</html> 
 
