@@ -27,20 +27,23 @@
 
       /* Navbar links on mouse-over */
       .navbar a:hover {
-        background-color: #000;
+        color: #000;
+        font-weight: bold;
       }
       
-      .navbar a::before {
+      .navbar a::after {
         content: '';
         display: block;
-        height: 5px;
+        height: 2.5px;
         background-color: #444;
         
         position: absolute;
-        top: 5px;
-        width: 10%;
+        top: 0;
+        width: 0%;
         
-        transition: all ease-in-out 250ms;      
+        /* transition: property duration timing-function delay|initial|inherit */
+        transition: all 250ms ease-in-out;      
+       
       }
 
       /* Current/active navbar link */
