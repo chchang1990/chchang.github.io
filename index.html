@@ -58,11 +58,12 @@
         transition: all 0.2s ease-in-out;             
       }
 
-      /* Current/active navbar link */
-      .active a {
+      /* Current/active navbar link
+      .active {
         color: #000;
         font-weight: bold;
       }    
+      */
       
       /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
       @media screen and (max-width: 500px) {
@@ -76,10 +77,10 @@
   </head>
   
   
-  <body>
+  <body style="background-color:#FBFBF9">
     
     <div class="navbar">
-      <a class="active" href="#" style="font-family:sans-serif"><i class="fa fa-fw fa-user"></i> Chi-Hung Chang</a>
+      <a href="#" style="font-family:sans-serif"><i class="fa fa-fw fa-user"></i> Chi-Hung Chang</a>
       <a href="#projects" style="font-family:sans-serif"><i class="fas fa-project-diagram"></i> Projects</a>
       <a href="#publications" style="font-family:sans-serif"><i class="fas fa-book"></i> Publications</a>
       <a href="#talks" style="font-family:sans-serif"><i class="far fa-comments"></i> Talks</a>
