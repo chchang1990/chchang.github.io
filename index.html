@@ -30,7 +30,20 @@
         color: #000;
         font-weight: bold;
       }
-      
+
+      /* Transition effect */
+        /* Draw a line after the link when not hover */
+      .navbar a::after {
+        content: '';
+        display: block;
+        height: 2.5px;
+        background-color: #444;
+        
+        position: absolute;
+        bottom: 0;
+        width: 0%;                  
+      }      
+        /* Draw a line after the link when hover, and apply transition effect */
       .navbar a:hover::after {
         content: '';
         display: block;
@@ -42,8 +55,7 @@
         width: 100%;
         
         /* transition: property duration timing-function delay|initial|inherit */
-        transition: all 0.2s ease-in-out;      
-       
+        transition: all 0.2s ease-in-out;             
       }
 
       /* Current/active navbar link */
