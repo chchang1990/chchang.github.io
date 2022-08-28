@@ -76,8 +76,8 @@
       /* Define CSS grid style */
       .grid-container {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);                 
-          grid-template-rows: 400px 400px;
+          grid-template-columns: auto;                 
+          grid-template-rows: repeat(2, 1r);
           align-content: space-evenly;
           grid-gap: 20px;
           background-color: #D0BE8B;
@@ -89,6 +89,7 @@
           /*height: 400px;*/
           background-size: cover;
           background-clip: content-box;
+          background-repeat: no-repeat;
           /*background-attachment: fixed;*/
       }
       
