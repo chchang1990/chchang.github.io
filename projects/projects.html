@@ -71,6 +71,16 @@
           float: none;
           display: block;
         }
+        
+        .grid {
+          display: grid;
+          grid-gap: 3px;
+          grid-template-columns: repeat(3, 1fr);
+        }
+        div>div {
+          background-color: #ccc;
+        }
+        
       } 
       
       /* Define CSS grid style */
@@ -82,6 +92,7 @@
           grid-gap: 20px;
           background-color: #D0BE8B;
           padding: 20px;
+          position: relative;
       }
 
       .grid-container > div {
@@ -100,6 +111,34 @@
       .bg2 {
           background: url('https://chchang1990.github.io/projects/thumbnails/viirs_wf.PNG');
       }
+ 
+
+      .grid-container img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+
+      .grid-container .caption {
+        background-color:rgba(0,0,0,0.5);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        color:#fff;
+        font-family:sans-serif;
+        opacity:0;
+        transition:opacity 0.3s;
+      }
+
+      .grid-container:hover .caption {
+        opacity:1;
+      }      
+      
       
     </style>    
     
@@ -122,13 +161,15 @@
       <br>
       <br>
       <h1 style="font-family:sans-serif; color:#43302E">Projects</h1>
-      <div class="grid-container">
-          <div class="bg1">
-            <h2 style="padding-left:10px; padding-right:10px; font-family:sans-serif; color:#43302E">Operational SAR imagery-based inundation forecasting in the Lower Mekong</h2>
+      <div class="grid">
+          <div class="grid-container">
+            <img src='https://chchang1990.github.io/projects/thumbnails/mekong_fld.PNG'/>
+            <div class="caption"><h2 style="padding-left:10px; padding-right:10px; font-family:sans-serif; color:#43302E">Operational SAR imagery-based inundation forecasting in the Lower Mekong></h2></div>
           </div>
             
-          <div class="bg2">
-            <h2 style="padding-left:10px; padding-right:10px; font-family:sans-serif; color:#43302E">Operational VIIRS imagery-based water fraction map forecasting</h2>
+          <div class="grid-container">
+            <img src='https://chchang1990.github.io/projects/thumbnails/viirs_wf.PNG'/>
+            <div class="caption"><h2 style="padding-left:10px; padding-right:10px; font-family:sans-serif; color:#43302E">Operational VIIRS imagery-based water fraction map forecasting</h2></div>
           </div>
                    
                         
