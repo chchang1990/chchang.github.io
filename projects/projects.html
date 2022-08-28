@@ -75,9 +75,12 @@
       
       @media only screen and (min-width: 500px) {
         .grid {
-          display: grid;
-          grid-gap: 3px;
-          grid-template-columns: repeat(3, 1fr);
+          display: grid;          
+          grid-template-rows: 400px 400px;
+          align-content: space-evenly;
+          grid-gap: 20px;
+          background-color: #D0BE8B;
+          padding: 20px;          
         }
         div>div {
           background-color: #ccc;
@@ -86,13 +89,6 @@
       
       /* Define CSS grid style */
       .grid-container {
-          display: grid;
-          /*grid-template-columns: auto;*/
-          grid-template-rows: 400px 400px;
-          align-content: space-evenly;
-          grid-gap: 20px;
-          background-color: #D0BE8B;
-          padding: 20px;
           position: relative;
       }
 
